@@ -79,7 +79,7 @@ barplot(df.barplot$Mean, names.arg = df.barplot$Color, ylim = c(0,2.5), xlab = "
 arrows(b.plot, df.barplot$Mean-df.sd$StanDev,
        b.plot, df.barplot$Mean+df.sd$StanDev, angle=90, code=3)
 dev.off()
-
+#I like the species of fruit loops.
 # Create a scatter plot between two of your numeric columns. (10 points)
   # Change the point shape and color to something NOT used in the example.
   # Change the x and y labels and add a title
@@ -87,7 +87,7 @@ dev.off()
 
 ?pch
 plot(df$Value ~ df$Number, pch=16, col= "darksalmon", xlab = "Salmon ID", ylab = "Jump Height (cm)", main = "Salmon Jump Height")
-par(family = "serif")
+par(family = "serif")#If you want to change font this line needs to go before the plot line above. Everything looks good!
 
 # Upload both plots with the script used to create them to GitHub. (5 points)
   # Follow the same file naming format as last week for the script.
