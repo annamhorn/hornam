@@ -108,7 +108,7 @@ community.df <- cbind(species1,species2,species3)
 shannon_index <- diversity(community.df, index= "shannon")
 
 ##Print Result##
-cat("Shannon Diversity Index:", shannon_index)
+cat("Shannon Diversity Index:", shannon_index)#clever (is this in the example?)
 #results: Shannon Diversity Index: 0.9839614 1.0889 0.8982053 0.6662784#
 
 
