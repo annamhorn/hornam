@@ -54,8 +54,8 @@ summary(mod.gen)
   # Which model is a better fit to explain the yield response(2 pts), and WHY? (4 points)
   # Hint: Does one model seem more likely to be over-fitted?
 
-#I think environment would be the better fit than generation. I think this because the environment has a lower std. error,
-#consistently lower p-values, and a higher R^2 value than the generation. 
+#I think environment would be the better fit than genotype. I think this because the environment has a lower std. error,
+#consistently lower p-values, and a higher R^2 value than the genotype. 
 
 # Which environment would be your very WORST choice for generating a strong yield response? (2 points)
 
