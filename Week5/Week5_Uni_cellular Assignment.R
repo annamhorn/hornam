@@ -51,6 +51,8 @@ fitpois_rep <- fitdist(data.reptime$na.omit.data.RepTime.sec., "pois")
 fitnbinom_rep <- fitdist(data.reptime$na.omit.data.RepTime.sec., "nbinom")
 fitlogis_rep <- fitdist(data.reptime$na.omit.data.RepTime.sec., distr = "logis")
 gofstat(list(fitpois_rep, fitnbinom_rep, fitlogis_rep))
+#code jumps back and forth between scripts for this section and I can't get it to run.
+#data.new doesn't exist.
 
 ##REPTIME##
 
@@ -86,7 +88,7 @@ hist(data.reptime$na.omit.data.RepTime.sec.,xlab = "RepTime (seconds)",main = "R
 #similar trait that would give them a similar replication time. This could be reflected in Figure 4,
 #where we see 6 strains with a generally lower number of cells, and 3 with a higher number of cells, 
 #indicating differences in reproduction between the strains#
-
+#What is the possible evolutionary process? This is a really good description of the pattern but doesn't have the evolutionary context
 
 
 
