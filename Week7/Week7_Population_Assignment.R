@@ -31,6 +31,8 @@ ggplot(data)  +
 # My reasoning here is that the very tiny peaks are shortly after the Daphnea peaks, and the decline
 #is strongly in tune with the decline of Daphnea.#
 
+#by density I would say Daphnae is the r-selected, but you've made a good logical argument to flip it.
+
 #Now copy/paste in the Lotka-Volterra function, plotting script, and load the "deSolve" package from the tutorial:
 library(deSolve)
 
