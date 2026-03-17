@@ -32,7 +32,7 @@ plot(glmm.mod.int)
 
 # The authors used proportional consumption of prey as the (y) in their model, but did not include this in the dataset.
   # So we are going to create it - run the following line, assuming "df" is your data frame (feel free to change that):
-df$prop.cons <- df$eaten/df$prey 
+df$prop.cons <- df$eaten/df$prey #out of order with models
 
 # (Q1) - The code I've provided in line 13 above is performing two operations at once. What are they? (2 pts)
 
@@ -71,7 +71,7 @@ AIC(gam.mod.add, gam.mod.int)
 #I am not entirely confident in these results. The residuals look better compared to the glmm,
 #but they still don't look entirely random. I think the residuals of the interactive gam
 #actually look worse than the additive gam, despite the AIC.#
-
+#I agree. They're still funky.
 
 
 
