@@ -36,7 +36,7 @@ abiotic.means2 <- as.data.frame(abiotic.means2) # Make sure it's in the right fo
 abiotic.means2
 
 #okay for some reason the authors of this paper HATE me and want me to die because they left out A4. What did 
-#A4 ever do to you? Now I have to take out A4 of my transects.
+#A4 ever do to you? Now I have to take out A4 of my transects. #I enjoy the snark.
 
 veg.transects2 <- veg.transects1[-15,]
 veg.transects2
@@ -95,7 +95,7 @@ plot(ordPh)
 #I think overall, all the abiotic measures are predictors in small ways, but phosphorus is the largest
 #predictor because of the interaction between phosphorus, calcium, and pH#
 
-
+#Well done with the ordistep! And great context/answer!
 
 # (Q2 - 12 pts) Then use the dataset from the tutorial to create a linear model related to your RDA. Try multiple predictors to find the best fit model.
   # Explain the ecological importance of the significant predictors, or lack of significant predictors.
@@ -175,3 +175,6 @@ AIC(mod4)
 #Although pH was not sig in this model, I still think that it plays a role, just maybe a smaller one. Looking
 # at the paper, phosphorus differed greatly from ag to ancient sites, confirming that is the driver of 
 #relationships in this data set with vegetation#
+
+
+#Above and beyond with model selection and glm.nb!
