@@ -190,6 +190,7 @@ rarefaction(pool.riff, subsample=250, plot=TRUE, color=TRUE, error=FALSE,  legen
     # Hint: if you use rbind() to bring your summed riffles together it will be easier to display in a single rarefaction plot.
 
 ## R6 - indicated by longest curve. ##
+#but R9 has the lowest curve...
 
 # (Q3) - Do you think the differences between riffles are ecologically meaningful? (3 pts)
     # Hint: It might help to look at 800-individual subsamples to answer this question.
@@ -198,9 +199,11 @@ rarefaction(pool.riff, subsample=800, plot=TRUE, color=TRUE, error=FALSE,  legen
 
 #Yes, it looks like inc sample number does not change the curves or their length/slope. In application, Riffle 6
 #may have the most rare species or species richness, something along those lines. 
+#Or most individuals sampled.
 
 # (Q4) - Why do the curves stop at different locations on the x-Axis? (2 pts)
 
 #I assume they stop because they've reached the point of the asymptote, when more samples no longer changes 
 #the species richness, or sampling more is no longer effective#
+#Ahh, it's because of number of individuals sampled, none of these reached their asymptote.
 
