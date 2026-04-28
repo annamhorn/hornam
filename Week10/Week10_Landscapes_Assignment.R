@@ -130,7 +130,7 @@ plot_smooth(gam.mod, view="SpecCond", rm.ranef=FALSE, ylab = "", xlab = "Specifi
 
 #The brown trout and brook trout summaries were similar in terms of pattern, like the AICs of the 
 #models and the plots. However, the AICs for the brown trout were actually lower than the brookies.#
-
+#AIC isn't comparable because the y is different between the models.
 
 
 #4: For your final project you'll need to find two separate data sources to combine similar to the process here.
@@ -219,12 +219,14 @@ gage_df$Date
 
 #linear model#
 
-fish_model <- lm(length ~ tempWater + value, data = df.usgs)
+fish_model <- lm(length ~ tempWater , data = df.usgs)
 summary(fish_model)
 
-                                               
+#I can't get the model to run with "value". But worked with tempWater!
 
-
+plot(length ~ tempWater , data = df.usgs)
+abline(fish_model)
+#I had to look at it.
 
 
 
