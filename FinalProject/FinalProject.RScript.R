@@ -101,7 +101,7 @@ all_species_sf <- st_as_sf(all_species_df,
                            crs = 4326)
 
 #UNIVERSITY DENSITY#
-postsec.data <- read.csv("C:/GitHub/hornam/FinalProject/data/Postsecondary_School_Locations_2022-23.csv")
+postsec.data <- read.csv("C:/GitHub/hornam/FinalProject/data/Postsecondary_School_Locations_2022-23.csv")#no "data" folder
 postsec.data$ZIP <- sub("-.*", "", postsec.data$ZIP)
 postsec.data
 
@@ -116,7 +116,7 @@ head(uni_counts)
 
 ##POP DENSITY OPTION 2##
 #went with this option, had more zip codes#
-census.data <- read.csv("C:/GitHub/hornam/FinalProject/CensusData.csv")
+census.data <- read.csv("C:/GitHub/hornam/FinalProject/CensusData.csv")#also missing
 census.data.1 <- census.data[-1,-4]
 census.data.1$ZCTA5 <- gsub(".*US", "", census.data.1$GEO_ID)
 colnames(census.data.1)[3] <- "pop_total"
